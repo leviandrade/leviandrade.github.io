@@ -1,0 +1,463 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+body{
+	margin-top:0%;
+	margin-left:0%;
+	margin-right:0%;
+	margin-bottom:60%;
+	}
+input[type=checkbox]+label{
+	display:block;
+	margin:1px;
+	padding:2px;	
+	}
+input[type=checkbox]{
+	display:none;
+	}
+input[type=checkbox]+label:before{
+	content:"\2714" ;
+	border:1px solid  yellow;
+	border-radius:11px ;
+	display:inline-block;
+	width:13px;
+	height:18px;
+	margin-right:10px;
+	padding-left:3px;
+	padding-bottom:0px;
+	padding-right:3px;
+	padding-top:0px;
+	vertical-align:bottom;
+	color:transparent;
+	}
+input[type=checkbox]:checked + label:before{
+	background-color:#32CD32;
+	color:#fff;
+	}
+
+input[type=checkbox]:disabled + label:before{
+	transform:scale(1);
+	border-color:#D3D3D3;
+	background-color:white;
+	}
+.class2{
+	color:#D3D3D3
+		}
+
+#lateral1{ 
+	position:absolute;
+	top:20%;
+	left:10%;
+	border:1px solid;
+	background-color:#F8F8FF;
+	width:17%;
+	height:108%
+
+	}
+
+#lateral2{ 
+	position:absolute;
+	top:20%;
+	left:30%;
+	border:1px solid;
+	background-color:#F8F8FF;
+	width:17%;
+	height:108%
+
+	}
+#lateral3{ 
+	position:absolute;
+	top:20%;
+	left:50%;
+	border:1px solid;
+	background-color:#F8F8FF;
+	width:17%;
+	height:108%
+	}	
+#lateral4{ 
+	position:absolute;
+	top:20%;
+	left:70%;
+	border:1px solid;
+	background-color:#F8F8FF;
+	width:17%;
+	height:108%
+
+	}	
+.div1{background-color:#1C1C1C;
+	padding-bottom:1px;
+	padding-top:1px;
+	font-family:arial
+	}
+.p1{text-align:center;
+	color:white;
+	}
+.p2{font-size:13px;
+	text-align:center;
+	}
+.class3{font-size:13px;
+	padding-left:2%
+	}
+
+.div2{
+	background-color:#F8F8FF;
+	}
+.h4a{text-align:center}
+form{margin:2%}
+#seguir{
+	position:absolute;
+	top:139%;
+	left:40%;
+	width:200px;
+	height:35px;
+	border-radius:20px;
+	color:white;
+	border-color:transparent;
+	cursor:pointer;
+}
+#seguir{background-image:linear-gradient(to right,#8B0000,#EE5C42);}
+
+
+#lateral1:hover{background:#1C1C1C;color:#FFB5C5;top:18%;height:112%}
+#lateral1:hover .div1{background:red}
+#lateral1:hover .div2{background:#1C1C1C}
+#lateral1:hover{position:absolute;}
+
+
+#lateral2:hover{background:#1C1C1C;color:#FFB5C5;top:18%;height:112%}
+#lateral2:hover .div1{background:red}
+#lateral2:hover .div2{background:#1C1C1C}
+
+#lateral3:hover{background:#1C1C1C;color:#FFB5C5;top:18%;height:112%}
+#lateral3:hover .div1{background:red}
+#lateral3:hover .div2{background:#1C1C1C}
+
+#lateral4:hover{background:#1C1C1C;color:#FFB5C5;top:18%;height:112%}
+#lateral4:hover .div1{background:red}
+#lateral4:hover .div2{background:#1C1C1C}
+
+#menu{background-color:#1C1C1C;color:white}
+h2{text-align:center}
+.navio{margin-left:40%}
+
+
+input[type="radio"]{
+	display:none;
+}
+input[type="radio"]+label:before{
+	background-color:white;
+	border:2px solid black;
+	border-radius:11px;
+	content:"";
+	display:inline-block;
+	font-size:20px;
+	height:16px;
+	width:13px;
+	line-height:20px;
+	margin:-2px 6px 0 0;
+	margin-left:10px;
+	padding-bottom:2px;
+	padding-left:1px;
+	padding-right:3px;
+	margin-right:10px;
+	text-align:center;
+	vertical-align:middle;
+	color:#32CD32;
+	cursor:pointer;
+}
+input[type="radio"]:checked + label:before{
+	content:"\2714";
+	background-color:#32CD32;
+	color:white;
+	
+}
+#opcao:checked{background:#1C1C1C;
+				color:white;top:18%;height:110%}
+
+</style>
+<script>
+function go()
+{
+	location.href="tela2.html"
+}
+function valida()
+{
+if (document.getElementById('opcao').checked==true || document.getElementById('opcao2').checked==true || document.getElementById('opcao3').checked==true || document.getElementById('opcao4').checked==true)
+	{
+		document.getElementById('seguir').removeAttribute("disabled");
+	}			
+if(document.getElementById('opcao').checked==true)
+{	document.getElementById('tela3').style.background = '#1C1C1C';
+	document.getElementById('a2').style.color = 'black';
+	document.getElementById('a2').style.background='#F8F8FF';
+	document.getElementById('lateral2').style.background='#F8F8FF';
+		document.getElementById('tela4').style.background = '#1C1C1C';
+	document.getElementById('a3').style.color = 'black';
+	document.getElementById('a3').style.background='#F8F8FF';
+	document.getElementById('lateral3').style.background='#F8F8FF';
+		document.getElementById('tela5').style.background = '#1C1C1C';
+	document.getElementById('a4').style.color = 'black';
+	document.getElementById('a4').style.background='#F8F8FF';
+	document.getElementById('lateral4').style.background='#F8F8FF';
+	
+	
+
+
+
+
+
+
+
+	document.getElementById('tela1').style.background = 'red';
+	document.getElementById('a1').style.color = '#FFB5C5';
+	document.getElementById('a1').style.background='#1C1C1C';
+	document.getElementById('lateral1').style.background='#1C1C1C';
+	document.getElementById('txt1').style.color='#FFB5C5';
+	document.getElementById('txt2').style.color='#FFB5C5';
+	document.getElementById('txt3').style.color='#FFB5C5';
+	document.getElementById('txt4').style.color='#FFB5C5';
+	document.getElementById('txt5').style.color='#FFB5C5';
+	document.getElementById('txt6').style.color='#FFB5C5';
+	document.getElementById('txt7').style.color='#FFB5C5';
+	document.getElementById('stardar').style.color='#FFB5C5';
+}
+else if(document.getElementById('opcao2').checked==true)
+{
+	document.getElementById('tela1').style.background = '#1C1C1C';
+	document.getElementById('a1').style.color = 'black';
+	document.getElementById('a1').style.background='#F8F8FF';
+	document.getElementById('lateral1').style.background='#F8F8FF';
+		document.getElementById('tela4').style.background = '#1C1C1C';
+	document.getElementById('a3').style.color = 'black';
+	document.getElementById('a3').style.background='#F8F8FF';
+	document.getElementById('lateral3').style.background='#F8F8FF';
+		document.getElementById('tela5').style.background = '#1C1C1C';
+	document.getElementById('a4').style.color = 'black';
+	document.getElementById('a4').style.background='#F8F8FF';
+	document.getElementById('lateral4').style.background='#F8F8FF';
+
+
+
+	document.getElementById('tela3').style.background = 'red';
+	document.getElementById('a2').style.color = '#FFB5C5';
+	document.getElementById('a2').style.background='#1C1C1C';
+	document.getElementById('lateral2').style.background='#1C1C1C';
+	document.getElementById('txt8').style.color='#FFB5C5';
+	document.getElementById('txt9').style.color='#FFB5C5';
+	document.getElementById('txt10').style.color='#FFB5C5';
+	document.getElementById('txt11').style.color='#FFB5C5';
+	document.getElementById('txt12').style.color='#FFB5C5';
+	document.getElementById('txt13').style.color='#FFB5C5';
+	document.getElementById('txt14').style.color='#FFB5C5';
+	document.getElementById('txt15').style.color='#FFB5C5';
+	document.getElementById('gold').style.color='#FFB5C5';
+
+}
+else if(document.getElementById('opcao3').checked==true)
+{
+	document.getElementById('tela1').style.background = '#1C1C1C';
+	document.getElementById('a1').style.color = 'black';
+	document.getElementById('a1').style.background='#F8F8FF';
+	document.getElementById('lateral1').style.background='#F8F8FF';
+		document.getElementById('tela3').style.background = '#1C1C1C';
+	document.getElementById('a2').style.color = 'black';
+	document.getElementById('a2').style.background='#F8F8FF';
+	document.getElementById('lateral2').style.background='#F8F8FF';
+		document.getElementById('tela5').style.background = '#1C1C1C';
+	document.getElementById('a4').style.color = 'black';
+	document.getElementById('a4').style.background='#F8F8FF';
+	document.getElementById('lateral4').style.background='#F8F8FF';
+
+
+
+	document.getElementById('tela4').style.background = 'red';
+	document.getElementById('a3').style.color = '#FFB5C5';
+	document.getElementById('a3').style.background='#1C1C1C';
+	document.getElementById('lateral3').style.background='#1C1C1C';
+	document.getElementById('txt16').style.color='#FFB5C5';
+	document.getElementById('txt17').style.color='#FFB5C5';
+	document.getElementById('txt18').style.color='#FFB5C5';
+	document.getElementById('txt19').style.color='#FFB5C5';
+	document.getElementById('txt20').style.color='#FFB5C5';
+	document.getElementById('txt21').style.color='#FFB5C5';
+	document.getElementById('txt22').style.color='#FFB5C5';
+	document.getElementById('txt23').style.color='#FFB5C5';
+	document.getElementById('txt24').style.color='#FFB5C5';
+	document.getElementById('txt25').style.color='#FFB5C5';
+	document.getElementById('platinum').style.color='#FFB5C5';
+}
+else if(document.getElementById('opcao4').checked==true)
+{
+document.getElementById('tela1').style.background = '#1C1C1C';
+	document.getElementById('a1').style.color = 'black';
+	document.getElementById('a1').style.background='#F8F8FF';
+	document.getElementById('lateral1').style.background='#F8F8FF';
+		document.getElementById('tela3').style.background = '#1C1C1C';
+	document.getElementById('a2').style.color = 'black';
+	document.getElementById('a2').style.background='#F8F8FF';
+	document.getElementById('lateral2').style.background='#F8F8FF';
+		document.getElementById('tela4').style.background = '#1C1C1C';
+	document.getElementById('a3').style.color = 'black';
+	document.getElementById('a3').style.background='#F8F8FF';
+	document.getElementById('lateral3').style.background='#F8F8FF';
+
+
+
+	document.getElementById('tela5').style.background = 'red';
+	document.getElementById('a4').style.color = '#FFB5C5';
+	document.getElementById('a4').style.background='#1C1C1C';
+	document.getElementById('lateral4').style.background='#1C1C1C';
+	document.getElementById('txt26').style.color='#FFB5C5';
+	document.getElementById('txt27').style.color='#FFB5C5';
+	document.getElementById('txt28').style.color='#FFB5C5';
+	document.getElementById('txt29').style.color='#FFB5C5';
+	document.getElementById('txt30').style.color='#FFB5C5';
+	document.getElementById('txt31').style.color='#FFB5C5';
+	document.getElementById('txt32').style.color='#FFB5C5';
+	document.getElementById('txt33').style.color='#FFB5C5';
+	document.getElementById('txt34').style.color='#FFB5C5';
+	document.getElementById('txt35').style.color='#FFB5C5';
+	document.getElementById('txt36').style.color='#FFB5C5';
+	document.getElementById('txt37').style.color='#FFB5C5';
+	document.getElementById('txt38').style.color='#FFB5C5';
+	document.getElementById('diamond').style.color='#FFB5C5';
+}
+}
+
+</script>
+
+</head>
+
+<body>
+<div id="menu">
+<br>
+	<h2>Escolha um plano</h2><hr></div><br><br><br><br>
+		<div id="lateral1" class="format"><label for="lateral1">
+			<p><input type="radio" id="opcao"  name="opcao" value="&#9711;" onchange="valida()"><label for="opcao"></label></p>
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK8SURBVGhD1dpLqE1RHMfxQ/Io8s4rM1GKpDwGiqQMFBMl5FFiIJERlzIzkRIGykjKAANk5pVMTMgjJY/MPELej7x9f5t1rHv673u3e/7r7H1+9alz99nn/tc67bP32v9zaokyBd/xBDdwGrswF71R+WgCv3I8xg4MQ3cpbbJdTSD4gAOYjb5Q+mA0FmArJqCUhAno3b6MW3j3d1ue+PmLGIPSEiZwLPvrX/SObsIF/EAYcHAby9ALpSZvAnHGYzk2YxUmozIpMoGWZi/O/4er0ASeRtuK2gj3rEc4TlP7iFFwzUjowmQVTGE33KNTm1UshdcYCNdoKWAVS2UdXLMIVqFULsE1k2AVSuUbBsMtWq9YhVJaDNe8h1UoFfez0RtYhVI5A9c8h1UolbtwjT5YVqFUnsEtg2AVSekz3FLkLsub6wRWwiqSklazbtGS2iqS0h24Rbd7VpGUjsMl4/ATVpGUOuCS7bAKpDYdTUfNpYewCqT0CC7dCXUOrAKpqXsXMhY7cQJnoSNiALqNdnoAq0BKWrIMgTIfVlPsOrqdxB40vrAVVkNRI6xxAan10RpMQz90SnzMzcILvOqBt1CxL9G2ok4ijOMU4sFrPCNgZigO/nnYdDwaW3MQD15yl9easXr4X6HucLNpdgK6+7uGxgmcg5m1CDupm1ykd99VmpmABn8EYTyxTwgf7nr0ArXB4x31wTkKtVK29cA+6P/o2xnr+Tz7ofN/PJZGh9EpS2HtWFVa0qjFU4/eaWvHKtMRo5NOlnuwdqq6Q8jS6laJF32gs/6pHlg7tIOZqN2PNrSbGcjO1daT7WA4akuiDe1EF9wsWkZcgbVTVelasBD1aNnaeDWusvhmp56J0KXfekFVvMQK5Ebrog24iTK6EBb1Y/W17RaovVk4+mZSP8TQDy/KMA9T0R85qdV+A2jFSU7UVRe9AAAAAElFTkSuQmCC" class="navio"/>
+<h4 class="h4a" id="stardar">STANDARD</h4>
+<hr>
+<form action="" method="post">
+	<input type="checkbox" class="classe1" name="name1" checked><label for="check1" id="txt1" >Bolsa e BMeF</label>
+	<input type="checkbox" class="classe1" name="name2" checked><label for="check2" id="txt2">Renda Fixa</label>
+	<input type="checkbox" class="classe1" name="name3" checked><label for="check3" id="txt3">Tesouro Direto</label>
+	<input type="checkbox" class="classe1"  name="name4" checked><label for="check4" id="txt4">Fundos</label>
+	<input type="checkbox" class="classe1"  name="name5" checked><label for="check5" id="txt5">Posição Consolidada</label>
+	<input type="checkbox" class="classe1" name="name6" checked><label for="check6" id="txt6">Relatório diário</label>
+	<input type="checkbox"class="classe1"  name="name7" checked><label for="check7" id="txt7">Análise Fundamentalista</label>
+	<input type="checkbox" id="check8" name="name8" disabled ><label for="check8" class="class2">Assistente Virtual</label>
+	<input type="checkbox" id="check9" name="name9" disabled ><label for="check9" class="class2">Recomendação</label>
+	<input type="checkbox" id="check10" name="name10" disabled ><label for="check10" class="class2">Apuração de IR</label>
+	<input type="checkbox" id="check11" name="name11" disabled ><label for="check11" class="class2">Noticías Rousters</label>
+	<input type="checkbox" id="check12" name="name12" disabled ><label for="check12" class="class2">Chat com profissionais</label>
+	<input type="checkbox" id="check13" name="name13" disabled ><label for="check13" class="class2">Carteira cotizada</label>
+</form>
+		<div class="div1" id="tela1">
+			<p class="p1" ><strong>R$ 0,00/Mês</strong></p>
+		</div>
+		<div class="div2" id="a1"><br><br>
+			<p class="p2">Taxa de manutenção: <strong>Isento</strong><br>
+			Corretagem Mínima:<strong>R$ 49,90</strong></p><br>
+		</div>
+</div>
+<div id="lateral2" class="format">
+<p><input type="radio" id="opcao2" name="opcao" value="" onchange="valida()"><label for="opcao2"></label></p>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQJSURBVGhD7dlryFRFGMDx16KL2oUoSz+YREaFkZiaECFlmoVSBBFd1Cgyu4jihRQVtIuZohlFEFhQlNKVLiaE1getTElRstQQUjA1ArWLpUWZ//+y+zJ7es6+pe8uK5wHfvB6ds6Z3Zln5syMLUUUUUQRRRRRRBFFFNFU0REvYUXiA/TCf4kZSO/NWop+qFtcin8CO9EVteICRPdm/YieqFtsRFTxGthDeTEF0X2RbeiCusSDiCrVa+iAKL5EdE+edTgT7R5n4FdElWoasnEhorJt+QQno93DgRxVqMO4BWn8n/TJqtWrRxWnYguiyuplDtot5sKH/o59DfAnrM+xd8xxJf7CAVzkhQbEIPwB673JC0cT3eEL5mvYGuPRyLgLjq3fcDP65rgCZ6E1zsVKVHJRu3A9BjfYZqTfI48ptwAnouUNRIWOByOQO9/7Nn6zQVYj+g5teR7hB3objYgT8Cmy9f+d83fqEYQfyCn0NNQ7JiCq/2K8W+bfURkHdfhBxSL4hq0XlyQ2VFS3SxNnHEWr3O0ovb2zHzSLz/BU2cfla6lHUYrsB8eDn3E2SvELokLNbCZa41tEhZrVD3C53xruUaOCzcjp1BVCVTyAqHAzehz/CjfqhxDd0Ex8sZbWPlE8g+imZvEWTkJueDqwG+lNX2AMHsba8rWIL6L5uBNPotZe+iuMw/2I5vYK9wa+RO/GQ8ht+TSuhkcd7+BWpHtU//aa3eiSdw8+xzycjzS6YTZWwWX5Vngw5nrfdU8aQ/E6/GE+02Ob5+DZ1DGHX+QFuOI7zws1wg3++7ij9K/8OAdP4xX08EKNuBb+cLMg+8Orwp3YQPTGANhtr8ItZaVLTYuX4frbLeflcAPiWmY90u63NT1eHALLWd70ehE/oVLuIGz9e2C9lvVLT4TLiPSZZsYTGA6/p1tQ09AGqXpoytxeCHvAnIzKVHwDK27rYMudlLntoUGtsaLvMAnZ3WKqNK3ehyVYDrvMGclUSN927kFH4llYxkPaxZiO/kjHSx+40vSsx2f6orQRbOlSi5XjdNwGU8r085n2yCyYEenAdTntstss+AgfIhp/VXENHFTORld5ISc64zF8Dx/qF8sL1++2qLu9G72QE6fA1t8Bx2HNM9Tr4AmE+e25jGmzCdnuMrdtLQeVZSfDFsumgqnnTOZuyV4bDX9YdqzIGcpetV6faRo6/vYiLeeLdhnscceovWGvXoaqwZryeGUUTLFaCz4Ho+nkwHKgeiwSlZN5PRa3Y0P5WsSx8h6cCEzp/YjKlfYEzgC2lhsHL/gLL0E2/A+Oe2EZy3rPMGRTphNugK1pOQeaveDskQ3/j8BeMu8tOxWeCVWd+xAe/jpDmSmVZzKztXQ6Agq4q0OAFPufAAAAAElFTkSuQmCC" class="navio"/>
+<h4 class="h4a" id="gold">GOLD</h4>
+
+<hr>
+<form action="" method="post">
+	<input type="checkbox" class="classe1" name="name1" checked><label for="check1"id="txt8">Bolsa e BMeF</label>
+	<input type="checkbox" class="classe1"  name="name2" checked><label for="check2"id="txt9">Renda Fixa</label>
+	<input type="checkbox" class="classe1" name="name3" checked><label for="check3"id="txt10">Tesouro Direto</label>
+	<input type="checkbox" class="classe1" name="name4" checked><label for="check4"id="txt11">Fundos</label>
+	<input type="checkbox" class="classe1" name="name5" checked><label for="check5"id="txt12">Posição Consolidada</label>
+	<input type="checkbox" class="classe1" name="name6" checked><label for="check6"id="txt13">Relatório diário</label>
+	<input type="checkbox"class="classe1" name="name7" checked><label for="check7"id="txt14">Análise Fundamentalista</label>
+	<input type="checkbox" class="classe1" name="name8" checked><label for="check8"id="txt15">Assistente Virtual</label>
+	<input type="checkbox" id="check9" name="name9" disabled ><label for="check9" class="class2">Recomendação</label>
+	<input type="checkbox" id="check10" name="name10" disabled ><label for="check10" class="class2">Apuração de IR</label>
+	<input type="checkbox" id="check11" name="name11" disabled ><label for="check11" class="class2">Noticías Rousters</label>
+	<input type="checkbox" id="check12" name="name12" disabled ><label for="check12" class="class2">Chat com profissionais</label>
+	<input type="checkbox" id="check13" name="name13" disabled ><label for="check13" class="class2">Carteira cotizada</label>
+</form>
+	<div class="div1" id="tela3">
+		<p class="p1"><strong>R$ 149,90/Mês*</strong></p>
+	</div>
+	<div class="div2" id="a2">
+		<p class="class3"> * O valor mensal é revertido como credito de corretagem,não sendo correlativo nos meses seguintes </p>
+		<hr>
+		<p class="p2">Taxa de manutenção: <strong>Isento</strong><br>
+		Corretagem Mínima:<strong>R$ 39,90</strong></p><br>
+	</div>
+</div>
+
+<div id="lateral3" class="format">
+<p><input type="radio" id="opcao3" name="opcao" value="" onchange="valida()"><label for="opcao3"></label></p>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARRSURBVGhD7dlpyBVVGMDxW2m2UR+MIIiIrISCtAxavkSbSR8iso0KtMRSW2jfN8u0QoP6oNUXE6PSViKCgnYqIogW2j+0Z4aBZIrR+v9f3oHD6ZnxzuvcdxTuAz/e+9575sx5Zs6dOfPcTh9jb/yLN7v/bYUxSKDt2CoS2BXH4PjA2TCBj5P3chPQajwOB7k5TkZr4fSIBlXHbLQWgwQwSKCX2B034q7M94gGVceLyPs9B43GVYh23k97oLG4DtFOyqzHE7gct+FdRO2qeCNsLHpJoBj0GdgZeeyDa/Aeou1zI5JA2aB3xKl4GPMxEWmMg32+j6hf9S0BB70Sp2MnFOGgp8K78zqkg9GXuBN5MvvjBnyAtH2jCVyKaNC+Pg0r8DvSAVQpS+YA3IyP0GgCaThoEzEhz0Y0wDq+wDz0dWHn/HaeO9+bGHSZRpPZBWfiSWxAtMN++hx34GDUiqPwFNoYdBmTuQke1MqYjL8QdbIl8EoV3WO6sS2+QbThlsRlTRh7Idqgyk/YnDO2BnWn6jMIw+fbOoN5HdvhrOS9Or7DbvBL+ufQe71YjNJ4FtFGkWkwnHprEbWpcj+KqPNccQRK43BEG0Vc6xThVIraVPESWcQLiNrkTHST8QqijXP3wnBh9g+iNlVegzEGvyBqk+upgnECoo1zf+Bu5IuwOpbCJ7Los9wn2AY9Ra9r9pF0HnoO53fUSVt+xPboObyyfIqoszaU3ryq4mJEnY20jfAeVTuK4mzbvMcMKwYJNGSQQNuGncCxsBphqeQBlK0Y/4Z3VKsTF+ErRO3kZ7axrdu4bdTOVbH7dN+XoJGwBOJS9m344ONfd3II0tgB7vR5fDbE116W/SyNw/AQ3sHXeAvuIy+3DCu881kKdOdH+kZFHAqX4tZ0LHCVhZ/5bGtbt6kK9/kcHEPlXXg0joZLaXl6F+EHFKfUU/0yLoM/zk3CcXCKvYR0Kri0vg+WYVy7y9e+twppny7kPFv2ZZ8uJN3Hq0hXuJbxF8KxOcYTYTvrrd0KWdEw59G/HumOIz/Ddh6xqqW1nz0Nf2vY1BLaA+jRr1qtdpf0PtI9Ap81PbUPwl9NutkNxSh45C2VPwoT8+/tsJLhWSzCkuAs+P2wTy3BBfC5uwinxRT4YPMYij5vhRcQH1eL2Bd+h/y+OEZrVXMxFqVhAhZqnRImlA4yDZM7H34JrSdZrC0La59W976F27htFCY3B7ZzDOnB/F94VK6AR8iB+hPPG8gvcb/CM3UtbHs1liOfCk4TryY+7DgI3QOvWvn0Wo1lsC/7tG/PgvtK2zkWiwgL4BitlrudRbjuPEobF3wC8ijtB6/ZZTVR3/dzj7wPHVXL8A9xLjwTHoyykspvcAo6dS6E1eyonQe7syeKn4KcfzNwIPKwrOecvRL+aOFfrwZRue8gmLz93YLpGI88XCafBPvyYuJM8LsWXYr9rs6EfXopPqXT6Yz5Dyl5rufI9BzYAAAAAElFTkSuQmCC" class="navio"/>
+<h4 class="h4a" id="platinum">PLATINUM</h4>
+<hr>
+<form action="" method="post">
+	<input type="checkbox" class="classe1" name="name1" checked><label for="check1" id="txt16">Bolsa e BMeF</label>
+	<input type="checkbox" class="classe1"  name="name2" checked><label for="check2"id="txt17">Renda Fixa</label>
+	<input type="checkbox" class="classe1" name="name3" checked><label for="check3"id="txt18">Tesouro Direto</label>
+	<input type="checkbox" class="classe1" name="name4" checked><label for="check4"id="txt19">Fundos</label>
+	<input type="checkbox" class="classe1" name="name5" checked><label for="check5"id="txt20">Posição Consolidada</label>
+	<input type="checkbox" class="classe1" name="name6" checked><label for="check6"id="txt21">Relatório diário</label>
+	<input type="checkbox" class="classe1" name="name7" checked><label for="check7"id="txt22">Análise Fundamentalista</label>
+	<input type="checkbox" class="classe1" name="name8" checked ><label for="check8"id="txt23">Assistente Virtual</label>
+	<input type="checkbox" class="classe1" name="name9" checked ><label for="check9"id="txt24">Recomendação</label>
+	<input type="checkbox" class="classe1" name="name10" checked ><label for="check10"id="txt25" >Apuração de IR</label>
+	<input type="checkbox" id="check11" name="name11" disabled ><label for="check11" class="class2">Noticías Rousters</label>
+	<input type="checkbox" id="check12" name="name12" disabled ><label for="check12" class="class2">Chat com profissionais</label>
+	<input type="checkbox" id="check13" name="name13" disabled ><label for="check13" class="class2">Carteira cotizada</label>
+</form>
+	<div class="div1" id="tela4">
+		<p class="p1"><strong>R$ 217,00/Mês*</strong></p>
+	</div>
+	<div class="div2"id="a3">
+		<p class="class3" > * O valor mensal é revertido como credito de corretagem,não sendo correlativo nos meses seguintes </p>
+		<hr>
+		<p class="p2">Taxa de manutenção: <strong>Isento</strong><br>
+		Corretagem Mínima:<strong>R$ 49,90</strong></p><br>
+	</div>
+</div>
+
+<div id="lateral4" 
+>
+<p><input type="radio" id="opcao4" name="opcao" value="" onchange="valida()"><label for="opcao4"></label></p>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOgSURBVGhD7dlb6BVFAMfxkyWGgWYYgdFNiCgVwVtZWd5AQ7D0RS1vT4o9KWqlD11ENLJQJO/ig5mCkmaZYJeHEu0KkZSIVmAlEUkiYpL373fZkfEw5/z/Inr2xP7gw/nv7uzs7NnZ2Z3zr5QpU6ZMmTJl0umAF/FcttSEuRsXsDtbasKUJ9DoNP0J3Iyh6JMtNUFm45NW2IV+KFwOwy7TGgtQuFzJCSxE4VKewNWmTf4Zpyf+QaoRf+BOhDT8BGzsv/gRH2AypiHVgOBxhDT8BIbgFMJB3oUn8Cd+qSEe431gpcqkOORes9gtBuBR+DC6D70bxDfa6tjVn8C4bKmF+CSNL/31dgQhffEWfofb/sJNqJuW7oHroT0ORcvn8DlsWzvUTRFOoGP++TVmIB75WsyTWNVgbeF9+P/NU3Du2mxm4S5kD6/qftcslqDyW7SimZzHw6hsyVc0m/eRZQJSBYrMZ0F3ZLkFJ5AqWFSXvv2QtUgVLCqfT5flfpxBqnDR+EROZgNSOxTN80jGx3U8HziGRZiOD/N1tfhTie8pTlT+zteluM0ylnWfVJnASZXHtg22xXWn0Rk18xq+xzzc5ooog7EVP8MTdWKyDcMQ51a4/3dwOir/tm63xRmO7fgVPlCt8z14rDg22jqzB1drcwOcVq7GA66ok65YiSlIza1D3GYZy7pPvXjMNbANtqVuHoRd6F4423kB+xAu53/YiGfRDffkn2PwDuLXkZ8wBwNhfdY7CHOxH6Gc+6yHdTwE6+wBj7EJHjOU/QFOQ50pWs75+zO4HZVXEQpW+xZetpaeE263nCNEantsD5biZLQu5TicgdmlU9uVdSnfJ3bgy5z92v7qFC7ESYX/afHSfwr79Gf58njEfduJ/ivwfrG+vbBfv4xeCOmEibCLWpd1+tvpCoxFmA/bfR6B94Bts84vYLnsbbRWbNTbsEuMdkWdjMBXsNJ6o4TblsOy7lMvHvMbeLWqb/7L4mhjPxyVc4jzBa/6NfsgvKR+ayPhO5TLBxCXc4TyG58J67Mh/u23Fw/T8p54A9b1NCZhMeI5sGzLZjisWqdtcDjuj8qbiAsHzvq9GR/DR/AFKlXO9TthuZfgfqly8lcGT8ZXgY9Rq86z8H3HBtr1jiJVbh2y14j5sD/bZWyEo8aNiNMFnvnrcK7qp8uuj+N+7m891idHNUeQ6jrtww6TXoVQp/faHYjjvNifeBzJlsFuNbVSqXS8CLC0awClhEM6AAAAAElFTkSuQmCC" class="navio">
+<h4 class="h4a" id="diamond">DIAMOND</h4>
+
+<hr>
+<form action="" method="post">
+	<input type="checkbox" class="classe1" name="name1" checked><label for="check1"id="txt26">Bolsa e BMeF</label>
+	<input type="checkbox" class="classe1"  name="name2" checked><label for="check2"id="txt27">Renda Fixa</label>
+	<input type="checkbox" class="classe1" name="name3" checked><label for="check3"id="txt28">Tesouro Direto</label>
+	<input type="checkbox" class="classe1" name="name4" checked><label for="check4"id="txt29">Fundos</label>
+	<input type="checkbox" class="classe1" name="name5" checked><label for="check5"id="txt30">Posição Consolidada</label>
+	<input type="checkbox" class="classe1" name="name6" checked><label for="check6"id="txt31">Relatório diário</label>
+	<input type="checkbox" class="classe1" name="name7" checked><label for="check7"id="txt32">Análise Fundamentalista</label>
+	<input type="checkbox" class="classe1" name="name8" checked ><label for="check8"id="txt33">Assistente Virtual</label>
+	<input type="checkbox" class="classe1" name="name9" checked ><label for="check9"id="txt34">Recomendação</label>
+	<input type="checkbox" class="classe1" name="name10" checked ><label for="check10"id="txt35">Apuração de IR</label>
+	<input type="checkbox" class="classe1" name="name11" checked ><label for="check11"id="txt36">Noticías Rousters</label>
+	<input type="checkbox" class="classe1" name="name12" checked ><label for="check12"id="txt37">Chat com profissionais</label>
+	<input type="checkbox" class="classe1" name="name13" checked ><label for="check13"id="txt38">Carteira cotizada</label>
+</form>
+	<div class="div1" id="tela5">
+		<p class="p1" ><strong>R$ 399,90/Mês</strong></p>
+	</div>
+	<div class="div2"id="a4">
+	<p class="class3" > *O valor mensal é revertido como credito de corretagem,não sendo correlativo nos meses seguintes</p>
+	<hr>
+	<p class="p2">Taxa de manutenção: <strong>Isento</strong><br>
+	Corretagem Mínima:<strong>R$ 49,90</strong></p><br>
+	</div>
+</div>
+<input type="button" id="seguir"  value="                 SEGUIR              &#10132" onclick="go()" disabled />
+
+
+</body>
+</html>
