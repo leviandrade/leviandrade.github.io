@@ -1,0 +1,300 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+body{margin:0%;}
+#coluna1{
+	background-color:#1C1C1C;
+	width:35%;
+	height:150%;
+	float:right;
+	margin-right:0%;
+	margin-top:0%
+	}
+h2{
+	margin-top:3%;
+	margin-left:3%
+	}
+#coluna2{
+	width:63%;
+	height:150%;
+	float:left;
+	margin-right:0%;
+	margin-top:0%}
+#cadastro{
+	text-align:center;
+	font-size:23px;
+	color:black
+	}
+#op{text-align:center}
+
+.campos{ 
+	font-family:arial;
+	float:middle;
+	margin-left:8%;
+	margin-right:7%;
+	margin-top:5%;
+	border:1px solid;
+	border-radius:5px;
+	background-color:#F8F8FF
+}	
+#p1{
+	text-align:left;
+	margin-left:2%;
+	font-size:19px;
+	font-weight:bold
+	}
+
+input[type="radio"]{
+	display:none;
+}
+input[type="radio"]+label:before{
+	background-color:white;
+	border:3px solid black;
+	border-radius:15px;
+	content:"";
+	display:inline-block;
+	font-size:25px;
+	height:19px;
+	width:19px;
+	line-height:20px;
+	margin:-2px 6px 0 0;
+	margin-left:10px;
+	padding-bottom:2px;
+	padding-left:1px;
+	padding-right:3px;
+	margin-right:10px;
+	text-align:center;
+	vertical-align:middle;
+	color:#32CD32;
+	cursor:pointer;
+}
+input[type="radio"]:checked + label:before{
+	color:white;
+	background-color:green;
+}
+
+
+
+input[type="checkbox"]{
+	display:none;
+}
+input[type="checkbox"]+label:before{
+	background-color:white;
+	border:4px solid black;
+	content:"";
+	display:inline-block;
+	border-radius:4px;
+	font-size:20px;
+	height:19px;
+	width:19px;
+	line-height:20px;
+	margin:-2px 5px 5px 15px;
+	text-align:center;
+	vertical-align:middle;
+	color:green;
+	cursor:pointer;
+
+	
+}
+input[type="checkbox"]:checked + label:before{
+	content:"\2713";
+	background-color:#32CD32;
+	color:white;
+}
+.campo{margin-left:2%;border: 1px solid #000000;
+	width:38%;
+	height:4%;
+	border-radius:4px;
+	padding-left:5px;
+	}
+.lbl1{margin-left:2%}
+
+	
+#divdir{position:absolute;
+	top:47%;
+	left:30%; 
+
+	background-color:#F8F8FF;
+	width:25%;	
+	height:60%
+	}
+
+#campodir{margin-top:-2%;
+	width:80%;
+	height:10%;
+	border:1px solid;
+	border-radius:4px;
+	padding-left:5px;}
+	
+#email{margin-top:84%;}
+
+.box{
+	width:90%;height:55%;
+	background-color:#F8F8FF;
+	position:absolute;
+	border:dashed;
+	border-radius:5px;
+	margin-top:8%;
+	border-color:#87CEEB
+	}
+.upload{background-image: url('imagem.png');
+width:26px; margin-left:45%;margin-top:15%;
+height:26 px;
+}
+input[type="file"]{
+width:26px;
+height:26px;
+opacity:0;cursor:pointer;
+}
+#h4{text-align:center}
+
+
+#n{color:#1C1C1C}
+hr{color:#FFFAF0}
+#options{text-align:center}
+#plan{color:#A9A9A9
+}
+
+#botao{
+	width:200px;
+	height:35px;
+	border-radius:20px;
+	color:White;
+	background-color:black;
+	}
+h3{color:white}
+
+#ipsolon{
+	text-align:center;
+	color:#A9A9A9
+	}
+#tel{margin-left:0%;}
+#email1{margin-left:0%;margin-top:5%;}
+.num{color:#A9A9A9}
+
+#seguir{
+	position:absolute;
+	top:139%;
+	left:33%;
+	width:200px;
+	height:35px;
+	border-radius:20px;
+	color:white;
+	border-color:transparent;
+	cursor:pointer;
+}
+#seguir{background-image:linear-gradient(to right,#8B0000,#EE5C42);}
+#Voltar{
+	position:absolute;
+	top:139%;
+	left:13%;
+	width:200px;
+	height:35px;
+	border-radius:20px;
+	color:white;
+	border-color:transparent;
+	cursor:pointer;}
+#Voltar{background-image:linear-gradient(to right,#1C1C1C,#E8E8E8);}
+
+
+
+
+
+@media screen and (min-width: 1367px) , screen and (min-height: 769px) {
+#email{margin-top:91%;}
+#divdir{position:absolute;
+	top:42%;
+	left:30%; 
+	width:25%;	
+	height:57%
+	}
+	}
+
+
+
+
+
+
+</style>
+<script>
+function volta()
+{
+location.href="index.html"
+}
+</script>
+</head>
+<body>
+
+<div id="coluna1">
+<p id="n">Opção Escolhida</p>
+<div id="options">
+	<input type="radio" id="opt1"  name="opcao" value="1" /><label for="opt1"></label>
+	<input type="radio" id="opt2"  name="opcao" value="" /><label for="opt2"></label>
+	<input type="radio" id="opt3"  name="opcao" value="" /><label for="opt3"></label>
+	<input type="radio" id="opt4"  name="opcao" value="" /><label for="opt4"></label>
+	<hr>
+	<br>
+<h4 id="plan">Plano selecionado</h4>
+<input type="button" id="botao" Value="Standard" disabled /><br><br><br><br><br>
+	<div id="cartao">
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHlSURBVGhD7ZkxT8JAFMfZ/BKyM6mbkza6aOJAcVE3kjZ+AP0KfpdGIAzkSmB01DjJ5OwMQkkbF3P28NUc8Abk3T1Ccr/kF4Ze/u9/JZAelBwOh2O7qPeyciCyVhinSRhn0p5pEsRZ+7bzVYHRdFT5UGRDfKAd802Mwm66CxVo/N55fJBN87lNqEAjEOkUG2BdkU6gAg00nEmoQOPwrCo3JVSggQVzCRVoYMFcQgUaWDCXUIEG9uHiEirQwIK5hAo0irCP5JtNtwGdrdvAUbVXPq6JlleLk1xpy/Obvrx/eJXP7xNzG1DlPV8MsYG2PL3uy3rj86+0LtRaHbjz6CCbXty9GNqAL6bYANueXPXNbAAL53JpA+s8TmPBVAfRnpRPO0sOov25dYsbCOL0EWqtjh5oSqx8ob5ubgPqCLvOkVIPNCVWvFBfN7vrIhvnr421z8N6oCmx4oX6OqhAQw80JVa8UF8HFWjogaZUH1as/Ft0MLcOKtDQA7mFCjSwYC6hAg0smEuoQAML5hIq0MCCuYQKNIow7FvD5jUlVKCxyjAb15RQgcamHqe9mjDzQ67nx218gHX//+SJ4V12KnnYaCHcrrMjbNfMnxmK2aHeF031tqIDDZnPGOevDaPlHQ6Hg4FS6QeGIWPBbvFlfwAAAABJRU5ErkJggg=="/> 
+	</div>
+	<h3>Declarações do cliente</h3>
+	<p id="ipsolon">Loren ipsilon dollor est dominus insanu sloren <br>ipsilon dollor ipsilon dollor est dominus<br> insanus loren ipsilon dollo ipsilon . </p><br><br><hr>
+	<h3>Atendimento</h3><br><br>
+	<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIlSURBVGhD7dm/S1VxHMbxa7/oh4OhQUNRk2S4hJAkjkEtWmu0FIRYBE2R9AfY4lhBBE3h4qIINQg6iCARFNGPoYIgKByMIgrEfvh+hiOXw3PPudq5t89wHnhtHr7Px8M5fs/XSpkyZWy2ogs9ddiNUOnDR/yt0yI0cJhspHziOMLkJ1zJLKcQJh/gSma5hjCZgyuZZQphch+uZJav2IYQuQFXMk8/QuQsXME8txAi++EK5nmJMHkNVzJPJ0LkDlzBPGcQIifhCmZ5i10IEe1tluCKOnqNHkWo3IUrm/YD2gCGyzG4wtVWcBphk7WtUPlBhI7eKq68PEULQmcLXsANIOcQPlmv1GUcRvhMww0gukOtCJ0j0EPrBpAJhH8ersOVT4wgdPRAz8KVlz+4gNA5iC9wA8gvDCF0BqCiboCEPm50x/KyEw/xGfegLUlTzpguwxWv9ghtqJW9mEf6um94jFFcxAm0o/Dot5xePE1b7G6k04FncNfU8h467iwsem3q9rvFqumg7Ca2Q9mH53A/m6fw4xuVGodbLO0dLiFra5JH1xYePXS34RYsWkMGSHIFq3ALF6WhAyi9eAO3eBEaPoCiD/sx/IYr8S+aMkASHTW+giuyWU0dQNGBr7YWn+AKbVTTB0iyB9qtasvgitXrvw2QZAfOQ1uIzTwjMwiTAxjGJL7DFU7TN0nI6M5oJ3oVD/AE+ldXMpj+vizgEMqUKbOeSmUNPc0pNbp7LiwAAAAASUVORK5CYII=" id="tel"/></p><p class="num"><span>0800-123-3000</span></p>
+	<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANDSURBVGhD7dhvyI13HMfxw4blP0WU/K1pqBWWeSCayUp5YEkoNEV5RNGS8m+e2FaymqSG5JHaqOWBv5NnxBMRJUqUbIyQ+bPh/T63ny7H99znnJud+5y6PvW6O/d1fa/T/T3X9ftz7kKePHnytHtmN7GxKLxoYtsQnmgWxQaOZA40k38xD4VO2IWoqFE9xEwU8wE6YB2eI7qgkdzEZzD+7YWD6O4LshBPEF3YCC5gKMzn2OALT5zFQH8hU3EPpRe3tz/QB2YWHuGNWegaxniAjIa/Z9+gPe1FZ5gV+A8ef2sa9ZP3DhjviHcme749bIJj1Of9p1fHknAdcAwsgnFsOEZKa+rhGRbDdMMBlNaUXcicjdYjdb4dUd3/5T6mwwzAaUR1ZRtIdiM9e9+iHtPsDXwK8wmuIqpTxQZ0DL1h5uAxorr34RwGwUzG34jqkqoa0HkMhpmEO4jq3sVh9ISZj2rWo6obkCvgOJiRuIKori12wi2NWYNqH9WaGtADzIDpj1OI6qrlH7oWxgZ+QVRXTs0NyF3gMpiu2I+orhIfkQUwPXAIUV1r2tSAXPBGwDjNbkVUV85dfIGUVYjqKmlTAw7oj2Ec2F1aXhaWIy3xrXGL4lbFDMOHLS8L3+AfRNeUU3MD+5B2rl/hNk6irwdI2mRF1yq7afwS3snj6OcBMh617MGqbsDnfiVcmeVM4bF0/hKGw7hXv4zs9dqD1LxbladI565jAozNHEX22nKqauBPpOfVeTrak+gWJsL4WH2N7+DzXfzvAekIj0XXu0AugXFcbUal6bRiA+5B0gI2Cn7SUV3iBmwjeqE0bg983KLrspxKP4LxQ3BfFNWp1Qayb+T/YFwDorqI31l/x4/4GWcQ1ZVj/RAY90MXEdWFDXgrl8J4K39APTZxpf6CA9346P6G0pq3GnAnmB1MbuSy5+vNiWI10uTh6+zk8UYDJ+D2wDiTNNJXyl+RNnrT4PTt8dcNbEFaUPwWVOuCUg+OA8eDcXy4phQbmOsP4tS3A9HFjcKJxJnJOMF4N4rxS8S77izrxQnlezjBFDMFLlZRcSNzgiluQVx8ooJm4BoTnmgWxUHsF+dm5UqfJ0+ePHnamkLhJTmqm8zfY7ITAAAAAElFTkSuQmCC" id="email1"></p><p class="num"><span>Levis_maciel@hotmail.com</span></p>
+</div>
+</div>
+
+<div id="coluna2">
+	
+	<h2>TERCEIROS/PROCURADORES<h2><hr><br>
+	<h3 id="cadastro">Deseja cadastrar terceiros e/ou procuradores?</h3>
+		<form id="op">
+			<input type="radio" id="opcao"  name="opcao" value="" /><label for="opcao"> SIM </label>
+			<input type="radio" id="opcao1"  name="opcao" value="" /><label for="opcao1"> NÃO </label>
+			</form>
+			<div class="campos">
+			<p id="p1">Marque os poderes outorgados:</p>
+			<p>
+				<input type="checkbox" id="opcao2"  name="opcao1" value="" /><label for="opcao2"> Emissão de Ordem </label>
+
+			</p>
+			<p>
+				<input type="checkbox" id="opcao4"  name="opcao1" value="" /><label for="opcao4"> Movimentação de conta-Corrente </label>
+				
+			</p>
+		<p class="lbl1">Nome do procurador</p>
+	 <p><input type="text" class="campo" name="nome" placeholder="Nome Completo"  size="40"/></p>
+	 <p class="lbl1" >Número do CPF</p>
+	 <p><input type="text" class="campo" name="nome" placeholder="999.999.999-99" size="40"/></p>
+	 <p class="lbl1" >CEP</p>
+	 <p><input type="text" class="campo" name="nome" placeholder="222222-222 " size="40"/></p>
+	<p class="lbl1"> Telefone</p>
+	 <p> <input type="text" class="campo" name="nome" placeholder="&#9742;"  size="40"/></p><br>
+	</div>
+	<div id="divdir">
+	<p>
+				<input type="checkbox" id="opcao3"  name="opcao1" value="" /><label for="opcao3"> Movimentação de custódia </label>
+
+			</p>
+			<p>
+				<input type="checkbox" id="opcao5"  name="opcao1" value="" /><label for="opcao5"> Assinaturas de contratos de câmbio </label>
+				<div class="box">
+					<div class="upload">
+						<p><input type="file" name="" id=""/></p>
+					</div>
+					<h4 id="h4">Upload do documento de <br>identificação de procurador</h4>
+					<p id="h4">Pode ser a foto de uma folha de <br>cheque ou do cartão do titular<br>e dependente da conta.</p>
+				</div>
+	<p id="email">E-mail</p>
+	 <input type="text"  id="campodir" placeholder="&#9993;" /><for="campodir"/></p>
+	</div>
+	<input type="button" id="Voltar"  value="&larr;           VOLTAR             " onclick="volta()"   />
+	<input type="button" id="seguir"  value="                 SEGUIR              &rarr;" onclick=""   />
+</div>
+</div>
+</body>
+</html>
